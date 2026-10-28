@@ -25,31 +25,28 @@ class MyDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: const Icon(
-              Icons.home,
-              color: AppDrawerDark.textColor,
-            ),
+            leading: const Icon(Icons.home, color: AppDrawerDark.textColor),
             title: const Text(
               'Home',
               style: TextStyle(color: AppDrawerDark.textColor),
             ),
             onTap: () {
-              Navigator.pop(context);
+              final navigator = Navigator.of(context);
+              navigator.pop(); // cierra el drawer
+              navigator.popUntil((route) => route.isFirst); // vuelve al home
             },
           ),
           ListTile(
-            leading: const Icon(
-              Icons.person,
-              color: AppDrawerDark.textColor,
-            ),
+            leading: const Icon(Icons.person, color: AppDrawerDark.textColor),
             title: const Text(
               'Portfolio',
               style: TextStyle(color: AppDrawerDark.textColor),
             ),
             onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
+              final navigator = Navigator.of(context);
+              navigator.pop(); // cierra el drawer
+              navigator.popUntil((route) => route.isFirst); // evita apilar pantallas
+              navigator.push(
                 MaterialPageRoute<void>(
                   builder: (_) => const PortfolioHomePage(),
                 ),

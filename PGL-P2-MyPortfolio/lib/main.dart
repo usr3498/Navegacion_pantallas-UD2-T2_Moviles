@@ -1,8 +1,7 @@
-
 import 'package:flutter/material.dart';
+import 'package:ud2_t2_usr3498_navegacion/screens/home_page.dart';
 import 'package:ud2_t2_usr3498_navegacion/shared/styles/App_screens_dark.dart';
-import 'screens/home_page.dart';
-import 'widgets/Drawer.dart';
+import 'package:ud2_t2_usr3498_navegacion/widgets/Drawer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +18,6 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
       ),
       home: Scaffold(
-        drawerScrimColor: Colors.white,
         drawer: const MyDrawer(),
         appBar: AppBar(
           backgroundColor: AppPortfolioScreensStyles.background,

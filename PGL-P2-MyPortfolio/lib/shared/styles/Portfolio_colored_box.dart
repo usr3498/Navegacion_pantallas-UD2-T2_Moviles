@@ -8,9 +8,9 @@ class MyColoredBox extends StatelessWidget {
     this.width = 190,
     this.height = 70,
     this.backgroundColor = AppHeadFootStyles.background,
-    this.textColor = const Color.fromARGB(0, 0, 0, 0),
+    this.textColor = AppHeadFootStyles.textColor,
     this.fontSize = 18,
-    this.margin =EdgeInsetsGeometry.zero,
+    this.margin = EdgeInsets.zero,
     this.borderRadius = BorderRadius.zero,
   });
 
@@ -23,20 +23,25 @@ class MyColoredBox extends StatelessWidget {
   final EdgeInsetsGeometry margin;
   final BorderRadiusGeometry borderRadius;
 
-
   @override
   Widget build(BuildContext context) {
     return Container(
       width: width,
       height: height,
       margin: margin,
-      decoration: BoxDecoration(color: backgroundColor, borderRadius: borderRadius,),
-      
-        child: Center(
+      decoration: BoxDecoration(
+        color: backgroundColor,
+        borderRadius: borderRadius,
+      ),
+      child: Center(
         child: Text(
           text,
           textAlign: TextAlign.center,
-          style: TextStyle(color: textColor, fontSize: fontSize),
+          style: TextStyle(
+            color: textColor, // ahora sí usa el parámetro
+            fontSize: fontSize,
+            decoration: TextDecoration.none,
+          ),
         ),
       ),
     );

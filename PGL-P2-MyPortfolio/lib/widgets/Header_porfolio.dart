@@ -3,11 +3,12 @@ import 'package:ud2_t2_usr3498_navegacion/shared/styles/header_portfolio_style.d
 
 class Header extends StatelessWidget {
   const Header({super.key});
+
   @override
   Widget build(BuildContext context) {
-    var header = Container(
-      height: AppHeadFootStyles.screenHeight(context),
-      width: AppHeadFootStyles.screenWidth(context),
+    return Container(
+      height: 70,
+      width: double.infinity,
       color: AppHeadFootStyles.background,
       child: Center(
         child: Text(
@@ -22,6 +23,5 @@ class Header extends StatelessWidget {
         ),
       ),
     );
-    return header;
   }
 }
