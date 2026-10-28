@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:ud2_t2_usr3498_navegacion/shared/styles/Portfolio_screens_style.dart';
 
-class SecondPage extends StatelessWidget {
-  const SecondPage({super.key});
+class PortfolioQrPage extends StatelessWidget {
+  const PortfolioQrPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: AppScreensStyles.screenHeight(context),
-      width: AppScreensStyles.screenWidth(context),
-      color: AppScreensStyles.background,
+      height: AppPortfolioScreensStyles.screenHeight(context),
+      width: AppPortfolioScreensStyles.screenWidth(context),
+      color: AppPortfolioScreensStyles.background,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -24,7 +24,7 @@ class SecondPage extends StatelessWidget {
               textBaseline: TextBaseline.alphabetic,
               decoration: TextDecoration.none,
               fontSize: 30,
-              color: AppScreensStyles.textColor,
+              color: AppPortfolioScreensStyles.textColor,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -32,7 +32,7 @@ class SecondPage extends StatelessWidget {
           Center(
             child: Container(
               padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(color: AppScreensStyles.textColor, borderRadius: BorderRadius.circular(12)),
+              decoration: BoxDecoration(color: AppPortfolioScreensStyles.textColor, borderRadius: BorderRadius.circular(12)),
               child: QrImageView(
                 data: "https://github.com/usr3498/Navegaci-n_pantallas-UD2-T2_Moviles",
                 version: QrVersions.auto,

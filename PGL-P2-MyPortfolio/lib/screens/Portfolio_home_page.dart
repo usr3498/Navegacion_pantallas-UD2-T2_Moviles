@@ -3,7 +3,7 @@ import 'package:ud2_t2_usr3498_navegacion/shared/styles/Portfolio_screens_style.
 import 'package:ud2_t2_usr3498_navegacion/shared/styles/Portfolio_colored_box.dart';
 
 
-class MainPage extends StatelessWidget {
+class PortfolioHomePage extends StatelessWidget {
   static const List<String> _hobbiesList = [
     "Gimnasio",
     'Baloncesto',
@@ -19,14 +19,14 @@ class MainPage extends StatelessWidget {
     "Pasear",
   ];
 
-  const MainPage({super.key});
+  const PortfolioHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    var mainPage = Container(
-      height: AppScreensStyles.screenHeight(context),
-      width: AppScreensStyles.screenWidth(context),
-      color: AppScreensStyles.background,
+    var PortfolioHomePage = Container(
+      height: AppPortfolioScreensStyles.screenHeight(context),
+      width: AppPortfolioScreensStyles.screenWidth(context),
+      color: AppPortfolioScreensStyles.background,
       child: SingleChildScrollView(
         child: Wrap(
           spacing: 2,
@@ -44,7 +44,7 @@ class MainPage extends StatelessWidget {
                     style: TextStyle(
                       decoration: TextDecoration.none,
                       fontSize: 20,
-                      color: AppScreensStyles.textColor,
+                      color: AppPortfolioScreensStyles.textColor,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -73,7 +73,7 @@ class MainPage extends StatelessWidget {
                     style: TextStyle(
                       decoration: TextDecoration.none,
                       fontSize: 30,
-                      color: AppScreensStyles.textColor,
+                      color: AppPortfolioScreensStyles.textColor,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -84,6 +84,6 @@ class MainPage extends StatelessWidget {
         ),
       ),
     );
-    return mainPage;
+    return PortfolioHomePage;
   }
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class AppScreensStyles{
+class AppPortfolioScreensStyles{
 
-  AppScreensStyles._();
+  AppPortfolioScreensStyles._();
 
   static const Color background = Color.fromARGB(255, 255, 244, 207);
   static const Color textColor = Color.fromARGB(255, 0, 0, 0);

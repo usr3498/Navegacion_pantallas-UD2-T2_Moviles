@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:ud2_t2_usr3498_navegacion/shared/styles/Header_portfolio_style.dart';
+import 'package:ud2_t2_usr3498_navegacion/shared/styles/header_footer_portfolio_style.dart';
 
 class MyColoredBox extends StatelessWidget {
   const MyColoredBox({
