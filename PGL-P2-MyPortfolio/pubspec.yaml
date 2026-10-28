@@ -19,4 +19,4 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/islas_home_page.jpg
+    - assets/images/

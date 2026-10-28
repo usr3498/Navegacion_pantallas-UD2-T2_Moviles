@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ud2_t2_usr3498_navegacion/shared/styles/header_footer_portfolio_style.dart';
+import 'package:ud2_t2_usr3498_navegacion/shared/styles/header_portfolio_style.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});

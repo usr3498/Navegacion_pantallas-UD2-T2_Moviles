@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ud2_t2_usr3498_navegacion/shared/styles/App_screens_dark.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class homePage extends StatelessWidget {
+  const homePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    var HomePage = Container(
+    var homePage = Container(
       height: AppPortfolioScreensStyles.screenHeight(context),
       width: AppPortfolioScreensStyles.screenWidth(context),
       color: AppPortfolioScreensStyles.background,
@@ -71,6 +71,6 @@ class HomePage extends StatelessWidget {
         ),
       ),
     );
-    return HomePage;
+    return homePage;
   }
 }

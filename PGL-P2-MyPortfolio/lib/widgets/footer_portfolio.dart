@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ud2_t2_usr3498_navegacion/shared/styles/header_footer_portfolio_style.dart';
+import 'package:ud2_t2_usr3498_navegacion/shared/styles/header_portfolio_style.dart';
 
 
 
@@ -19,7 +19,7 @@ class Footer extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            width: AppHeadFootStyles.screenWidth(context) * 0.5,
+            width: AppHeadFootStyles.screenWidth(context) * 0.1,
             height: AppHeadFootStyles.screenHeight(context),
             decoration: BoxDecoration(
               color: AppHeadFootStyles.background,
